@@ -1,0 +1,15 @@
+n = int(input())
+lst = list(map(int, input().split()))
+positive = 0
+negative = 0
+zero = 0
+for j in lst:
+    if j > 0:
+        positive += 1
+    elif j < 0:
+        negative += 1
+    else:
+        zero += 1
+print(positive / n)
+print(negative / n)
+print(zero / n)
